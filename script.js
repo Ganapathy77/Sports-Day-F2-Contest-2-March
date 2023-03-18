@@ -165,8 +165,9 @@ function HighJump() {
 }
 
 function AwardCeremony() {
+    console.log("Scores at the end of event ", score)
     let teamScores = [score.red, score.blue, score.green, score.yellow]
-    let teamScoresSorted = [...teamScores]
+    // let teamScoresSorted = [...teamScores]
     teamScores.sort((a, b) => {
         return b - a;
     })
